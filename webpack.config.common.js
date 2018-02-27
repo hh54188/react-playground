@@ -5,7 +5,9 @@ const PUBLIC_DIR_PATH = path.join(__dirname, "public");
 
 module.exports = {
   entry: {
-    app: "./src/index_dnd.js"
+    app: "./src/index_redux.js"
+    // app: "./src/index_pure.js"
+    // app: "./src/index_dnd.js"
     // app: "./src/index_dnd_demo.js"
     // app: "./src/index_highcharts.js"
     // app: "./src/index_create_request.js"
