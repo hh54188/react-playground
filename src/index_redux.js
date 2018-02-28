@@ -14,7 +14,10 @@ const constObj = {
 function counter(initalState = { count: 0 }, action) {
   switch (action.type) {
     case "add":
-      return Object.assign({}, { count: initalState.count + 1 });
+      // return Object.assign({}, { count: initalState.count + 1 });
+      initalState.count++;
+      console.log(initalState);
+      return initalState;
     default:
       return initalState;
   }
