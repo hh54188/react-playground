@@ -5,7 +5,8 @@ const PUBLIC_DIR_PATH = path.join(__dirname, "public");
 
 module.exports = {
   entry: {
-    app: "./src/index_antd_semantic_size.js"
+    app: "./src/router_animation/index.js"
+    // app: "./src/index_antd_semantic_size.js"
     // app: "./src/index_object_change.js"
     // app: "./src/index_interact.js"
     // app: "./src/index_antd_selector.js"
