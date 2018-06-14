@@ -5,12 +5,16 @@ import { Spring, Transition, animated, config } from "react-spring";
 import Detail from "./Detail";
 import Form from "./Form";
 import List from "./List";
+import Home from "./Home";
 
 @withRouter
 export default class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>
+          <Link to="/">Home</Link>
+        </h1>
         <h1>
           <Link to="/list">list</Link>
         </h1>
@@ -30,6 +34,11 @@ export default class App extends React.Component {
           {style => {
             return (
               <Switch location={this.props.location}>
+                <Route
+                  exact
+                  path="/"
+                  render={props => <Home {...props} style={style} />}
+                />
                 <Route
                   path="/list"
                   render={props => <List {...props} style={style} />}
