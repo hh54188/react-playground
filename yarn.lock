@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@babel/runtime@^7.0.0-beta.49":
+"@babel/runtime@7.0.0-beta.49", "@babel/runtime@^7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "http://npm.in.zhihu.com/@babel%2fruntime/-/runtime-7.0.0-beta.49.tgz#03b3bf07eb982072c8e851dd2ddd5110282e61bf"
   dependencies:
@@ -5643,14 +5643,14 @@ react-document-title@^2.0.3:
     prop-types "^15.5.6"
     react-side-effect "^1.0.2"
 
-react-dom@^15.6.1:
-  version "15.6.2"
-  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
+react-dom@^16.4.1:
+  version "16.4.1"
+  resolved "http://npm.in.zhihu.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
   dependencies:
-    fbjs "^0.8.9"
+    fbjs "^0.8.16"
     loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "^15.5.10"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 react-fittext@^1.0.0:
   version "1.0.0"
@@ -5745,6 +5745,12 @@ react-slick@~0.23.1:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
+react-spring@^5.3.15:
+  version "5.3.15"
+  resolved "http://npm.in.zhihu.com/react-spring/-/react-spring-5.3.15.tgz#95c775f55f36e48db01cdcce9f5718b172817a09"
+  dependencies:
+    "@babel/runtime" "7.0.0-beta.49"
+
 react-transition-group@^1.2.0:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/react-transition-group/download/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
@@ -5755,15 +5761,14 @@ react-transition-group@^1.2.0:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react@^15.6.1:
-  version "15.6.2"
-  resolved "http://registry.npm.taobao.org/react/download/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
+react@^16.4.1:
+  version "16.4.1"
+  resolved "http://npm.in.zhihu.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
-    create-react-class "^15.6.0"
-    fbjs "^0.8.9"
+    fbjs "^0.8.16"
     loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "^15.5.10"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"

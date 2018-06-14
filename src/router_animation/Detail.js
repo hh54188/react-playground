@@ -2,6 +2,7 @@ import React from "react";
 
 export default class Detail extends React.Component {
   render() {
-    return <div>Detail</div>;
+    const { style } = this.props;
+    return <div style={style}>Detail</div>;
   }
 }
