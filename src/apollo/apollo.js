@@ -59,10 +59,19 @@ const STAR_REPOSITORY = gql`
 `;
 // ===== QUERY =====
 
+// ===== Hight Order Componnt =====
+{
+  /* <Query query={GET_ORG_INFO_QUERY}>
+          {({ data, loading, error }) => {
+            return <App />;
+          }}
+        </Query> */
+}
 const DumpComponent = ({ data, loading, error }) => {
   return <App />;
 };
 const QueryContainer = graphql(GET_ORG_INFO_QUERY)(DumpComponent);
+// ===== Hight Order Componnt =====
 
 export default class ApolloApp extends React.Component {
   constructor(props) {
@@ -72,11 +81,7 @@ export default class ApolloApp extends React.Component {
     return (
       <ApolloProvider client={client}>
         <DumpComponent />
-        {/* <Query query={GET_ORG_INFO_QUERY}>
-          {({ data, loading, error }) => {
-            return <App />;
-          }}
-        </Query> */}
+
         {/* <Mutation
           query={STAR_REPOSITORY}
           variables={{ id: "the-road-to-learn-react" }}
