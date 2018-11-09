@@ -31,7 +31,28 @@ class App extends React.Component {
 
 ReactDOM.render(
   <Provider store={stopWatch}>
-    <App />
+    <div>
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+      <App />
+    </div>
   </Provider>,
   document.querySelector("#app")
 );

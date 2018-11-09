@@ -82,6 +82,7 @@ ReactDOM.render(
       <WrappedApp />
       <WrappedApp />
       <WrappedApp />
+      <WrappedApp />
     </div>
   </Provider>,
   document.querySelector("#app")
