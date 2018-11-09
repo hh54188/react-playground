@@ -5,7 +5,11 @@ const PUBLIC_DIR_PATH = path.join(__dirname, "public");
 
 module.exports = {
   entry: {
-    app: "./src/index_redux_reselect.js"
+    app: "./src/index_stopwatch_redux.js"
+    // app: "./src/index_list_id.js"
+    // app: "./src/index_mobx_performance.js"
+    // app: "./src/index_antd_style.js"
+    // app: "./src/index_redux_reselect.js"
     // app: "./src/index_apollo.js"
     // app: "./src/router_animation/index.js"
     // app: "./src/index_antd_semantic_size.js"
