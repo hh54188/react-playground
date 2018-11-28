@@ -17,7 +17,7 @@ const stopWatch = new StopWatch();
 
 @inject("store")
 @observer
-class App extends React.Component {
+class StopWatchApp extends React.Component {
   constructor(props) {
     super(props);
     const stopWatch = this.props.store;
@@ -32,26 +32,29 @@ class App extends React.Component {
 ReactDOM.render(
   <Provider store={stopWatch}>
     <div>
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
-      <App />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
+      <StopWatchApp />
     </div>
   </Provider>,
   document.querySelector("#app")

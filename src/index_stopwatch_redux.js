@@ -30,7 +30,7 @@ const store = createStore(
   })
 );
 
-class App extends React.Component {
+class StopWatch extends React.Component {
   constructor(props) {
     super(props);
     const { update } = this.props;
@@ -42,7 +42,7 @@ class App extends React.Component {
   }
 }
 
-const WrappedApp = connect(
+const WrappedStopWatch = connect(
   function mapStateToProps(state, props) {
     const {
       stopWatch: { currentTimestamp }
@@ -58,31 +58,34 @@ const WrappedApp = connect(
       }
     };
   }
-)(App);
+)(StopWatch);
 
 ReactDOM.render(
   <Provider store={store}>
     <div>
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
-      <WrappedApp />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
+      <WrappedStopWatch />
     </div>
   </Provider>,
   document.querySelector("#app")
