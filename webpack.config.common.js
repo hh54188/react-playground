@@ -5,7 +5,8 @@ const PUBLIC_DIR_PATH = path.join(__dirname, "public");
 
 module.exports = {
   entry: {
-    app: "./src/index_redux_oversub.js"
+    app: "./src/index_mobx_react_performance.js"
+    // app: "./src/index_redux_oversub.js"
     // app: "./src/index_stopwatch_redux_container.js"
     // app: "./src/index_stopwatch_redux.js"
     // app: "./src/index_stopwatch_mobx.js"
