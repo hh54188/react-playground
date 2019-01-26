@@ -5,7 +5,8 @@ const PUBLIC_DIR_PATH = path.join(__dirname, "public");
 
 module.exports = {
   entry: {
-    app: "./src/index_mobx_react_performance.js"
+    app: "./src/index_dynamic_import.js"
+    // app: "./src/index_mobx_react_performance.js"
     // app: "./src/index_redux_oversub.js"
     // app: "./src/index_stopwatch_redux_container.js"
     // app: "./src/index_stopwatch_redux.js"
@@ -38,7 +39,14 @@ module.exports = {
     // https://webpack.js.org/configuration/output/#output-publicpath
     publicPath: "/"
   },
-  plugins: [new CleanWebpackPlugin(["public/**/*.js", "public/**/*.map"])],
+  plugins: [new CleanWebpackPlugin([
+    "public/dist/**/*.js", 
+    "public/dist/**/*.map", 
+    'public/dist/**/*.svg', 
+    'public/dist/**/*.eot', 
+    'public/dist/**/*.ttf',
+    'public/dist/**/*.html',
+  ])],
   module: {
     loaders: [
       {
