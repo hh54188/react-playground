@@ -32,8 +32,8 @@ module.exports = {
     // app: "./src/index_list.js"
   },
   output: {
-    filename: "[name].bundle.js",
-    chunkFilename: '[name].bundle.js',
+    filename: "[name].[contenthash].bundle.js",
+    chunkFilename: '[name].[contenthash].bundle.js',
     path: PUBLIC_DIR_PATH,
     // publicPath 非常重要，决定了页面引用的资源相对于的路径是什么
     // 默认相对于页面路径加载
