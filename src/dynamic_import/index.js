@@ -1,5 +1,7 @@
 import React from 'react'
 
+let counter = 0
+
 export default class App extends React.Component {
   constructor(props) {
     super(props)
@@ -8,13 +10,23 @@ export default class App extends React.Component {
     }
   }
   loadModule = () => {
-    import('./other').then(module => {
-      console.log(module)
-      const ImportedComponent = module.default
-      this.setState({
-        ImportedComponent,
+    counter++
+    if (counter % 2 === 0) {
+      import(/* webpackChunkName: "other" */ './other').then(module => {
+        const ImportedComponent = module.default
+        this.setState({
+          ImportedComponent,
+        })
       })
-    })
+    } else {
+      import(/* webpackChunkName: "implicit" */ './implicit')
+      import(/* webpackChunkName: "another" */ './another').then(module => {
+        const ImportedComponent = module.default
+        this.setState({
+          ImportedComponent,
+        })
+      })
+    }
   }
   render() {
     const {ImportedComponent} = this.state
