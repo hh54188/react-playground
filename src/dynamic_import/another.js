@@ -1,12 +1,11 @@
-import React from 'react'
-import _ from 'lodash'
-import {Card} from 'antd'
+import React from "react";
+import _ from "lodash";
 
 export default class AnotherModule extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
-    return <div>AnotherModule</div>
+    return <div>AnotherModule</div>;
   }
 }

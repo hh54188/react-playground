@@ -1,7 +1,4 @@
 const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
-
-const PUBLIC_DIR_PATH = path.join(__dirname, "public");
 
 module.exports = {
   entry: {
@@ -31,25 +28,8 @@ module.exports = {
     // app: "./src/index_counter.js"
     // app: "./src/index_list.js"
   },
-  output: {
-    filename: "[name].[contenthash].bundle.js",
-    chunkFilename: '[name].[contenthash].bundle.js',
-    path: PUBLIC_DIR_PATH,
-    // publicPath 非常重要，决定了页面引用的资源相对于的路径是什么
-    // 默认相对于页面路径加载
-    // https://webpack.js.org/configuration/output/#output-publicpath
-    publicPath: "/"
-  },
-  plugins: [new CleanWebpackPlugin([
-    "public/dist/**/*.js", 
-    "public/dist/**/*.map", 
-    'public/dist/**/*.svg', 
-    'public/dist/**/*.eot', 
-    'public/dist/**/*.ttf',
-    'public/dist/**/*.html',
-  ])],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         loaders: ["style-loader", "css-loader"]

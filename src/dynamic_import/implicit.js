@@ -1,12 +1,11 @@
-import React from 'react'
-import _ from 'lodash'
-import {Card} from 'antd'
+import React from "react";
+import _ from "lodash";
 
 export default class ImplicitModule extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
-    return <div>ImplicitModule</div>
+    return <div>ImplicitModule</div>;
   }
 }
