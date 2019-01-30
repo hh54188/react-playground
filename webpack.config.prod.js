@@ -15,15 +15,25 @@ module.exports = merge(common, {
     publicPath: "/"
   },
   devtool: false,
+  // optimization: {
+  //   runtimeChunk: "single",
+  //   splitChunks: {
+  //     cacheGroups: {
+  //       vendor: {
+  //         test: /[\\/]node_modules[\\/]/,
+  //         name: "vendors",
+  //         chunks: "all"
+  //       }
+  //     }
+  //   }
+  // },
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
+  },
   plugins: [
-    new CleanWebpackPlugin([
-      "public/dist/**/*.js",
-      "public/dist/**/*.map",
-      "public/dist/**/*.svg",
-      "public/dist/**/*.eot",
-      "public/dist/**/*.ttf",
-      "public/dist/**/*.html"
-    ]),
+    new CleanWebpackPlugin(["public/dist/**/*.js", "public/dist/**/*.html"]),
     new UglifyJSPlugin({ sourceMap: false }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production")
