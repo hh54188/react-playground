@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
-  mode: "production",
+  // mode: "production",
   output: {
     filename: "[name].[contenthash].bundle.js",
     chunkFilename: "[name].[contenthash].bundle.js",
@@ -27,11 +27,11 @@ module.exports = merge(common, {
   //     }
   //   }
   // },
-  optimization: {
-    splitChunks: {
-      chunks: "all"
-    }
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: "all"
+  //   }
+  // },
   plugins: [
     new CleanWebpackPlugin(["public/dist/**/*.js", "public/dist/**/*.html"]),
     new UglifyJSPlugin({ sourceMap: false }),
