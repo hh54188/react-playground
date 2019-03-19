@@ -2,7 +2,8 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    app: "./src/index_same_store_test.js"
+    app: "./src/index_virtualized.js"
+    // app: "./src/index_same_store_test.js"
     // app: "./src/index_dynamic_import.js"
     // app: "./src/index_mobx_react_performance.js"
     // app: "./src/index_redux_oversub.js"
