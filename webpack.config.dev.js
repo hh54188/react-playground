@@ -18,7 +18,7 @@ module.exports = merge(common, {
   //   path: path.join(__dirname, "public/dist"),
   //   publicPath: "/"
   // },
-  mode: "development",
+  // mode: "development",
   devtool: "inline-source-map",
   devServer: {
     contentBase: PUBLIC_DIR_PATH,

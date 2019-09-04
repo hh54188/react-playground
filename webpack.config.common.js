@@ -2,7 +2,9 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    app: "./src/index_virtualized.js"
+    // app: "./src/index_virtualized.js"
+    // app: "./src/index_redux_connect_order.js"
+    // app: "./src/index_remove_deadcode.js"
     // app: "./src/index_same_store_test.js"
     // app: "./src/index_dynamic_import.js"
     // app: "./src/index_mobx_react_performance.js"
@@ -20,7 +22,7 @@ module.exports = {
     // app: "./src/index_object_change.js"
     // app: "./src/index_interact.js"
     // app: "./src/index_antd_selector.js"
-    // app: "./src/index.js"
+    app: "./src/index.js"
     // app: "./src/index_redux.js"
     // app: "./src/index_pure.js"
     // app: "./src/index_dnd.js"
